@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.container{
+			width: 1200px;
+/*			border: 2px solid black;*/
+			margin: 0px;
+
+		}
+		.header{
+/*			border: 2px solid red;*/
+		}
+		.header__menu{
+/*			border: 2px solid green;*/
+		}
+		.header__menu-list{
+			list-style: none;
+/*			border: 2px solid blue;*/
+		}
+		.list-item{
+			width: 200px;
+			float: left;
+			position: relative;
+
+			
+		}
+		.list-item a{
+      		width: 200px;
+			line-height: 50px;
+			font-size: 25px;
+			color: white;
+			background-color: blue;
+			text-decoration: none;
+			display: block;
+			text-align: center;
+			border: 1px solid blue;
+		}
+		.list-item a:hover{
+			list-style: none;
+			color: blue;
+			background-color: white;
+		}
+		  .header__menu-list2{
+			list-style: none;
+			display: none;
+     		position: absolute;
+
+		}
+		  .header__menu-list1{
+			list-style: none;
+			display: none;
+		}
+		 .header__menu-list .list-item:hover .header__menu-list2{
+			display: block;
+
+		}
+		 .header__menu-list2 :hover .level3{
+			display: block;
+
+		}
+		  .level3{
+			display: none;
+			list-style: none;
+      		position: absolute;
+      		float: left;
+	      	left: 200px;
+	      	top: 0;
+	      	bottom: 5px;
+	    }
+	      .header__menu-list2 .level3 .menu:hover .level4{
+			display: block;
+			position: absolute;
+		}
+		  .level4{
+			display: none;
+			list-style: none;
+      		float: left;
+	      	left: 200px;
+	      	top: 104px;
+	      	bottom: 0px;
+	    }
+	    .header__menu-list2 .level3 .menu:hover .levvel4{
+			display: block;
+			position: absolute;
+		}
+		  .levvel4{
+			display: none;
+			list-style: none;
+      		float: left;
+	      	left: 200px;
+	      	top: 155px;
+	      	bottom: 0px;
+	    }
+		.header__menu-list2 .level3 .menu:hover .bosqich4{
+			display: block;
+			position: absolute;
+		}
+		  .bosqich4{
+			display: none;
+			list-style: none;
+      		float: left;
+	      	left: 200px;
+	      	top: 53px;
+	      	bottom: 0px;
+	    }
+
+		  .tozalash{
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header class="header">
+			<div class="header__menu">
+				<ul class="header__menu-list">
+					<li class="list-item">
+						<a href="#">Silka1</a>
+						<ul class="header__menu-list2">
+							<li>
+								<a href="#">menu1.1</a>
+								<ul class="level3">
+									<li><a href="#">Level3</a></li>
+									<li><a href="#">Level3</a></li>
+									<li><a href="#">Level3</a></li>
+									<li class="menu"><a href="#">Level3</a>
+									<ul class="levvel4">
+										<li><a href="#">Level4</a></li>
+										<li><a href="#">Level4</a></li>
+										<li><a href="#">Level4</a></li>
+									</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#">menu1.2</a></li>
+							<li><a href="#">menu1.3</a></li>
+							<li><a href="#">menu1.4</a></li>
+							<li><a href="#">menu1.5</a></li>
+							<li class="list-item">
+								<a href="#">menu1.6</a>
+								<ul class="level3">
+									<li><a href="#">Level3</a></li>
+									<li class="menu">
+										<a href="#">Level3</a>
+										<ul class="bosqich4">
+											<li><a href="#">Level 4</a></li>
+											<li><a href="#">Level 4</a></li>
+											<li><a href="#">Level 4</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Level3</a></li>
+									<li><a href="#">Level3</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="list-item">
+						<a href="#">Silka2</a>
+						<ul class="header__menu-list2">
+							<li><a href="#">menu2.1</a></li>
+							<li><a href="#">menu2.2</a></li>
+							<li><a href="#">menu2.3</a></li>
+							<li><a href="#">menu2.4</a></li>
+						</ul>
+					</li>
+
+					<li class="list-item"><a href="#">Silka3</a>
+						<ul class="header__menu-list2">
+							<li><a href="#">menu3.1</a></li>
+							<li><a href="#">menu3.2</a></li>
+							<li class="header__menu-list2"><a href="#">menu3.3</a>
+								<ul class="level3">
+									<li><a href="#">Level3</a></li>
+									<li><a href="#">Level3</a></li>
+									<li class="menu"><a href="#">Level3</a>
+									<ul class="level4">
+										<li><a href="#">Level 4</a></li>
+										<li><a href="#">Level 4</a></li>
+										<li><a href="#">Level 4</a></li>
+										<li><a href="#">Level 4</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Level3</a></li>
+								</ul>
+							</li>
+							<li><a href="#">menu3.4</a></li>
+							<li><a href="#">menu3.5</a></li>
+						</ul></li>
+						
+					<div class="tozalash"></div>
+				</ul>
+			</div>
+			<div class="tozalash"></div>
+		</header>
+	</div>
+</body>
+</html>
